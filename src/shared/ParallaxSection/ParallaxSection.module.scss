@@ -1,0 +1,22 @@
+.ParallaxSection {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.scrollingContent {
+  position: relative;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.textSectionContent {
+  background: #fff;
+  min-height: 100px;
+}
