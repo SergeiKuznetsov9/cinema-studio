@@ -1,0 +1,12 @@
+.TextLink {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 700;
+  transition: filter 0.2s ease;
+}
+
+.TextLink:hover {
+  filter: brightness(0.8);
+}

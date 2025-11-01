@@ -1,0 +1,10 @@
+.IconLink {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.8); // Затемнение на 20%
+  }
+}

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { FC, ReactNode } from "react";
 import styles from "./ParallaxSection.module.scss";
 
