@@ -11,7 +11,7 @@ export const Main = () => (
     backgroundImage={`url(${fogImg})`}
     scrollingContent={
       <>
-        <div className={styles.gogolContainer}>
+        <div className={styles.Main}>
           <div className={styles.gogolPhoto}>
             <img src={gogolPhoto} alt="Gogol N.V." />
           </div>

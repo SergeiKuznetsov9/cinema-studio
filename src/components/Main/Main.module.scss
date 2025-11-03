@@ -1,4 +1,4 @@
-.gogolContainer {
+.Main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +49,7 @@
 
 .description {
   height: 734px;
-  max-width: 1150px;
+  width: 1150px;
   background-image: url("../../assets/img/photos/p0.png");
   background-size: auto 100%;
   background-repeat: no-repeat;
