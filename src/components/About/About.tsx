@@ -1,7 +1,13 @@
 import { ParallaxSection } from "@/shared/ParallaxSection";
 import theatreStageImg from "@/assets/img/backgrounds/view-black-white-theatre-stage.jpg";
+import p0Photo from "@/assets/img/photos/p0.png";
+import p1Photo from "@/assets/img/photos/p1.png";
+import p2Photo from "@/assets/img/photos/p2.png";
+import p3Photo from "@/assets/img/photos/p3.png";
+import p4Photo from "@/assets/img/photos/p4.png";
 import styles from "./About.module.scss";
 import { Button } from "@/shared/Button";
+import { Slider } from "@/shared/Slider";
 
 export const About = () => (
   <ParallaxSection
@@ -25,6 +31,10 @@ export const About = () => (
         </div>
       </div>
     }
-    textSectionContent={<div>КОНТЕНТ НА ТЕКСТОВОЙ ОБЛАСТИ</div>}
+    textSectionContent={
+      <div className={styles.sliderContainer}>
+        <Slider photos={[p0Photo, p1Photo, p2Photo, p3Photo, p4Photo]} />
+      </div>
+    }
   />
 );
