@@ -1,7 +1,7 @@
 @use "../../app/styles/vars/breakpoints-vars.scss" as vars;
 
 .Header {
-  background-color: var(--header-background);
+  background-color: var(--background);
   height: var(--header-height);
   width: 100%;
   color: var(--primary-text-color);
@@ -9,7 +9,6 @@
   align-items: center;
   justify-content: center;
   gap: 48px;
-  border-bottom: 2px solid red;
 }
 
 .logoContainer {
@@ -39,7 +38,6 @@
 
   li {
     font-size: 20px;
-    font-family: "Arial", Arial, sans-serif;
     font-weight: 400;
     cursor: default;
   }
@@ -49,10 +47,16 @@
     gap: 32px;
   }
 }
+
+.decorationWrapper {
+  background-color: var(--background);
+}
+
 .decoration {
   width: 100%;
+  max-width: 1844px;
+  margin: 0 auto;
   height: 110px;
-  background-color: var(--header-background);
   background-image: url("../../assets/img/icons/light.png");
   background-size: auto 100%;
   background-repeat: repeat-x;

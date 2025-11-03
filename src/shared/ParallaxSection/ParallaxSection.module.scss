@@ -1,10 +1,20 @@
 .ParallaxSection {
   position: relative;
-  min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
 }
 
 .scrollingContent {
@@ -13,10 +23,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  color: var(--primary-text-color);
 }
 
 .textSectionContent {
-  background: var(--text-section-background);
+  background: var(--background-invert);
   min-height: 100px;
+  color: var(--primary-text-color-invert);
 }

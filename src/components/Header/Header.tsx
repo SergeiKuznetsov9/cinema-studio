@@ -40,7 +40,9 @@ export const Header = () => {
           </div>
         </div>
       </header>
-      <div className={styles.decoration}></div>
+      <div className={styles.decorationWrapper}>
+        <div className={styles.decoration}></div>
+      </div>
     </>
   );
 };
