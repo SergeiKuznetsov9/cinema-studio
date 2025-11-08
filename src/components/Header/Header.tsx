@@ -6,6 +6,7 @@ import instImg from "@/assets/img/icons/inst.png";
 import styles from "./Header.module.scss";
 import { TextLink } from "@/shared/TextLink";
 import { IconLink } from "@/shared/IconLink";
+import { header } from "@/assets/data/header";
 
 export const Header = () => {
   return (
@@ -20,14 +21,13 @@ export const Header = () => {
               <TextLink url="#" title="Главная" />
               <TextLink url="#" title="Актеры" />
               <TextLink url="#" title="О нас" />
-              <TextLink url="#" title="Контакты" />
+              <TextLink url="#" title="О курсе" />
               <TextLink url="#" title="Новости" />
             </ul>
           </nav>
           <div className={styles.contactsContainer}>
             <ul className={styles.contactsList}>
-              <li>+375-29-0000000</li>
-              <li>+375-29-0000000</li>
+              <li>{header.phone}</li>
               <ul>
                 <IconLink url="#" icon={<img src={vkImg} alt="vkontakte" />} />
                 <IconLink url="#" icon={<img src={tgImg} alt="telegram" />} />

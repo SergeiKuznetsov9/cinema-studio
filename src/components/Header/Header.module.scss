@@ -23,10 +23,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 790px;
 
   nav ul {
     display: flex;
-    gap: 56px;
+    justify-content: space-between;
   }
 }
 

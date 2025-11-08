@@ -1,6 +1,6 @@
 import { useState, type FC } from "react";
 import styles from "./Slider.module.scss";
-import { Bullets } from "./bullets";
+import { Bullets } from "./Bullets";
 import rightSvg from "@/assets/img/icons/right.svg";
 
 type SliderProps = {

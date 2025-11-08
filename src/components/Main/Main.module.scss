@@ -47,6 +47,30 @@
   font-weight: 700;
 }
 
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 250px;
+
+  h1 {
+    white-space: nowrap;
+    font-size: 41px;
+    line-height: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  div {
+    font-size: 21px;
+    line-height: 33px;
+    font-weight: 400;
+    max-width: 767px;
+    text-align: center;
+  }
+}
+
 .description {
   height: 734px;
   width: 1150px;
@@ -57,61 +81,107 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding-top: 72px;
-}
+  gap: 34px;
+  padding-top: 37px;
 
-.descriptionTitle {
-  white-space: nowrap;
-  font-size: 41px;
-  line-height: 64px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+  h2 {
+    white-space: nowrap;
+    font-size: 41px;
+    line-height: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 
-.descriptionContent {
-  width: 416px;
-  font-size: 21px;
-  font-family: "Roboto", Arial, sans-serif;
-  line-height: 33px;
-  font-weight: 400;
-}
+  .descriptionContent {
+    width: 438px;
+    font-size: 21px;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 33px;
+    font-weight: 400;
 
-.descriptionButtons {
-  display: flex;
-  gap: 50px;
-  padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .descriptionButtons {
+    display: flex;
+    gap: 50px;
+    padding-top: 20px;
+  }
 }
 
 .textSectionContent {
-  width: 1150px;
+  width: 1055px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
   margin: 0 auto;
-  padding: 40px 0;
-  gap: 95px;
+  padding: 35px 0;
+
+  h2 {
+    white-space: nowrap;
+    font-size: 31px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 33px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.points {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .subSection {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 15px;
 
   p {
     font-size: 18px;
     line-height: 28px;
     font-weight: 700;
-    width: 265px;
+    width: 155px;
+    text-align: left;
   }
 }
 
 .gifContainer {
-  width: 172px;
-  height: 172px;
-  min-width: 172px;
-  min-height: 172px;
+  width: 115px;
+  height: 115px;
+  min-width: 115px;
+  min-height: 115px;
 
   img {
     height: 100%;
     width: 100%;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  font-size: 21px;
+  line-height: 33px;
+  font-weight: 400;
+  align-items: center;
+
+  strong {
+    text-align: center;
+  }
+
+  i {
+    text-align: center;
   }
 }
