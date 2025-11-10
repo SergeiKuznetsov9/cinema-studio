@@ -41,7 +41,7 @@ export const Main = () => (
             </p>
           </div>
           <div className={styles.descriptionButtons}>
-            <Button title="Подробнее о нас" />
+            <Button title="Подробнее о нас" className={styles.button} />
           </div>
         </div>
       </>

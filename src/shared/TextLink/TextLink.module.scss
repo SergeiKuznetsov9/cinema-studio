@@ -1,9 +1,15 @@
+@use "../../app/styles/vars/breakpoints-vars.scss" as vars;
+
 .TextLink {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 1.55;
   font-weight: 700;
   transition: filter 0.2s ease;
+
+  @media (max-width: vars.$xl) {
+    font-size: 15px;
+  }
 }
 
 .TextLink:hover {

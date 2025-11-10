@@ -1,0 +1,68 @@
+@use "../../app/styles/vars/breakpoints-vars.scss" as vars;
+
+.DesktopHeader {
+  background-color: var(--background);
+  height: var(--header-height);
+  width: 100%;
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+
+  @media (max-width: vars.$lg) {
+    display: none;
+  }
+}
+
+.logoContainer {
+  width: 362px;
+  margin-left: 36px;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: vars.$xl) {
+    width: 270px;
+  }
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 790px;
+  margin-right: 36px;
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: vars.$xl) {
+    width: 600px;
+  }
+}
+
+.contactsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+
+  li {
+    font-size: 20px;
+    font-weight: 400;
+    cursor: default;
+
+    @media (max-width: vars.$xl) {
+      font-size: 18px;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 32px;
+  }
+}

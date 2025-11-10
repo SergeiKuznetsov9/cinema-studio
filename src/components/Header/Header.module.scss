@@ -1,54 +1,5 @@
 @use "../../app/styles/vars/breakpoints-vars.scss" as vars;
 
-.Header {
-  background-color: var(--background);
-  height: var(--header-height);
-  width: 100%;
-  color: var(--primary-text-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 48px;
-}
-
-.logoContainer {
-  width: 362px;
-
-  img {
-    width: 100%;
-  }
-}
-
-.navContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 790px;
-
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.contactsList {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 56px;
-
-  li {
-    font-size: 20px;
-    font-weight: 400;
-    cursor: default;
-  }
-
-  ul {
-    display: flex;
-    gap: 32px;
-  }
-}
-
 .decorationWrapper {
   background-color: var(--background);
 }

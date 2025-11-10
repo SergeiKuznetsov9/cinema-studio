@@ -1,14 +1,35 @@
+@use "../../app/styles/vars/breakpoints-vars.scss" as vars;
+
 .Main {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 35px;
   padding: 43px 0px;
+
+  @media (max-width: vars.$lg) {
+    flex-direction: column;
+  }
 }
 
 .gogolPhoto {
   width: 564px;
   height: 564px;
+
+  @media (max-width: vars.$xl) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @media (max-width: vars.$sm) {
+    width: 360px;
+    height: 360px;
+  }
+
+  @media (max-width: vars.$xs) {
+    width: 320px;
+    height: 320px;
+  }
 
   img {
     width: 100%;
@@ -26,6 +47,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: vars.$xl) {
+    width: 445px;
+    height: 250px;
+    padding: 42px 30px;
+  }
+
+  @media (max-width: vars.$sm) {
+    width: 417px;
+    height: 200px;
+    padding: 23px 15px;
+  }
+
+  @media (max-width: vars.$xs) {
+    height: 176px;
+    width: 90%;
+  }
 }
 
 .quote {
@@ -33,6 +71,16 @@
   line-height: 43px;
   font-weight: 700;
   text-align: center;
+
+  @media (max-width: vars.$xl) {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  @media (max-width: vars.$xs) {
+    font-size: 18px;
+    line-height: 29px;
+  }
 }
 
 .line {
@@ -45,6 +93,16 @@
   font-size: 26px;
   line-height: 40px;
   font-weight: 700;
+
+  @media (max-width: vars.$xl) {
+    font-size: 21px;
+    line-height: 31px;
+  }
+
+  @media (max-width: vars.$xs) {
+    font-size: 17px;
+    line-height: 28px;
+  }
 }
 
 .titleSection {
@@ -54,12 +112,26 @@
   justify-content: space-evenly;
   height: 250px;
 
+  @media (max-width: vars.$xs) {
+    height: 190px;
+  }
+
   h1 {
     white-space: nowrap;
     font-size: 41px;
     line-height: 64px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (max-width: vars.$xl) {
+      font-size: 34px;
+      line-height: 50px;
+    }
+
+    @media (max-width: vars.$xs) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 
   div {
@@ -68,6 +140,18 @@
     font-weight: 400;
     max-width: 767px;
     text-align: center;
+
+    @media (max-width: vars.$xl) {
+      font-size: 18px;
+      line-height: 29px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media (max-width: vars.$xs) {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 }
 
@@ -77,12 +161,33 @@
   background-image: url("../../assets/img/photos/p0.png");
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right bottom;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 34px;
   padding-top: 37px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (max-width: vars.$xl) {
+    height: 605px;
+    width: 970px;
+  }
+
+  @media (max-width: vars.$lg) {
+    background: none;
+    width: 90%;
+    max-width: 700px;
+    height: fit-content;
+    padding-bottom: 40px;
+    gap: 10px;
+  }
+
+  @media (max-width: vars.$sm) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   h2 {
     white-space: nowrap;
@@ -90,6 +195,16 @@
     line-height: 64px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (max-width: vars.$xl) {
+      font-size: 34px;
+      line-height: 50px;
+    }
+
+    @media (max-width: vars.$xs) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 
   .descriptionContent {
@@ -102,12 +217,31 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @media (max-width: vars.$xl) {
+      width: 390px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    @media (max-width: vars.$lg) {
+      width: 100%;
+    }
+
+    @media (max-width: vars.$xs) {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 
   .descriptionButtons {
     display: flex;
     gap: 50px;
     padding-top: 20px;
+
+    @media (max-width: vars.$lg) {
+      justify-content: center;
+    }
   }
 }
 
