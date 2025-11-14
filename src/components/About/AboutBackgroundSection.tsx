@@ -1,4 +1,4 @@
-import { PhotoSwiper } from "@/shared/Swiper";
+import { PhotoSwiper } from "@/shared/PhotoSwiper";
 import styles from "./AboutBackgroundSection.module.scss";
 import { aboutBackgroundSection, swiperPhotos } from "@/assets/data/about";
 
@@ -9,7 +9,7 @@ export const AboutBackgroundSection = () => {
     <div className={styles.AboutBackgroundSection}>
       <h2>{aboutBackgroundSection.header}</h2>
       <p>{aboutBackgroundSection.text}</p>
-      <PhotoSwiper photos={photos} />;
+      <PhotoSwiper photos={photos} />
     </div>
   );
 };

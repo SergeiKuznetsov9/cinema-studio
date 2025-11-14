@@ -1,0 +1,39 @@
+.Contacts {
+  height: 685px;
+  width: 1180px;
+  margin: 0 auto;
+  background-image: url("../../assets/img/photos/p3.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: flex;
+  justify-content: start;
+}
+
+.contactsContent {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 64px 0;
+
+  h2 {
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 41px;
+    line-height: 64px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 33px;
+    font-weight: 400;
+    max-width: 416px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    gap: 40px;
+  }
+}
