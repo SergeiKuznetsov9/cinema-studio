@@ -1,40 +1,48 @@
 import { ParallaxSection } from "@/shared/ParallaxSection";
-import theatreStageImg from "@/assets/img/backgrounds/view-black-white-theatre-stage.jpg";
-import p0Photo from "@/assets/img/photos/p0.png";
-import p1Photo from "@/assets/img/photos/p1.png";
-import p2Photo from "@/assets/img/photos/p2.png";
-import p3Photo from "@/assets/img/photos/p3.png";
-import p4Photo from "@/assets/img/photos/p4.png";
+import stageImg from "@/assets/img/backgrounds/stage.png";
 import styles from "./About.module.scss";
 import { Button } from "@/shared/Button";
-import { Slider } from "@/shared/Slider";
+// import runGif from "@/assets/img/icons/run.gif";
+// import dynamicGif from "@/assets/img/icons/dynamic-move.gif";
+import { aboutParallaxSection } from "@/assets/data/about";
 
 export const About = () => (
   <ParallaxSection
-    backgroundImage={`url(${theatreStageImg})`}
+    backgroundImage={`url(${stageImg})`}
     scrollingContent={
-      <div className={styles.About}>
-        <div className={styles.aboutContent}>
-          <h2>Что такое Lorem Ipsum?</h2>
-          <p>
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
-            латинице с начала XVI века. В то время некий безымянный печатник
-            создал большую коллекцию размеров и форм шрифтов, используя Lorem
-            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
-            без заметных изменений пять веков, но и перешагнул в электронный
-            дизайн.
-          </p>
+      <div className={styles.Actors}>
+        <div className={styles.actorsContent}>
+          <h2>{aboutParallaxSection.header}</h2>
+          <p>{aboutParallaxSection.par1}</p>
+          <p>{aboutParallaxSection.par2}</p>
           <div className={styles.buttonContainer}>
-            <Button title="О нас" />
+            <Button title="Подробнее о курсе" />
           </div>
         </div>
       </div>
     }
     textSectionContent={
-      <div className={styles.sliderContainer}>
-        <Slider photos={[p0Photo, p1Photo, p2Photo, p3Photo, p4Photo]} />
-      </div>
+      "grdhg"
+      // <div className={styles.textSectionContent}>
+      //   <div className={styles.subSection}>
+      //     <div className={styles.gifContainer}>
+      //       <img src={runGif} alt="run" />
+      //     </div>
+      //     <p>
+      //       Давно выяснено, что при оценке дизайна и композиции читаемый текст
+      //       мешает сосредоточиться.
+      //     </p>
+      //   </div>
+      //   <div className={styles.subSection}>
+      //     <div className={styles.gifContainer}>
+      //       <img src={dynamicGif} alt="dynamic" />
+      //     </div>
+      //     <p>
+      //       Давно выяснено, что при оценке дизайна и композиции читаемый текст
+      //       мешает сосредоточиться.
+      //     </p>
+      //   </div>
+      // </div>
     }
   />
 );
