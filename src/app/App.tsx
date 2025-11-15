@@ -4,6 +4,7 @@ import { Actors } from "@/components/Actors";
 import { Header } from "@/components/Header";
 import { Main } from "@/components/Main";
 import { Contacts } from "@/components/Contacts";
+import { Footer } from "@/components/Footer";
 
 export const App = () => (
   <div>
@@ -13,5 +14,6 @@ export const App = () => (
     <Lessons />
     <Actors />
     <Contacts />
+    <Footer />
   </div>
 );
