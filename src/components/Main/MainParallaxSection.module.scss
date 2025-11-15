@@ -61,7 +61,7 @@
   }
 
   @media (max-width: vars.$xs) {
-    height: 176px;
+    height: unset;
     width: 90%;
   }
 }
@@ -87,6 +87,11 @@
   width: 89px;
   height: 5px;
   background-color: var(--primary-text-color);
+
+  @media (max-width: vars.$xs) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .authorName {
@@ -112,8 +117,8 @@
   justify-content: space-evenly;
   height: 250px;
 
-  @media (max-width: vars.$xs) {
-    height: 190px;
+  @media (max-width: vars.$xl) {
+    height: unset;
   }
 
   h1 {
@@ -126,11 +131,15 @@
     @media (max-width: vars.$xl) {
       font-size: 34px;
       line-height: 50px;
+      margin-bottom: 20px;
     }
 
     @media (max-width: vars.$xs) {
-      font-size: 30px;
-      line-height: 40px;
+      font-size: 26px;
+      line-height: 36px;
+      white-space: unset;
+      text-align: center;
+      margin-bottom: 10px;
     }
   }
 
@@ -196,14 +205,19 @@
     font-weight: 700;
     text-transform: uppercase;
 
+    @media (max-width: vars.$lg) {
+      text-align: center;
+    }
+
     @media (max-width: vars.$xl) {
       font-size: 34px;
       line-height: 50px;
     }
 
     @media (max-width: vars.$xs) {
-      font-size: 30px;
-      line-height: 40px;
+      font-size: 25px;
+      line-height: 34px;
+      white-space: unset;
     }
   }
 
@@ -226,6 +240,7 @@
 
     @media (max-width: vars.$lg) {
       width: 100%;
+      text-align: center;
     }
 
     @media (max-width: vars.$xs) {

@@ -1,0 +1,93 @@
+@use "../../app/styles/vars/breakpoints-vars.scss" as vars;
+
+.ActorsParallaxSection {
+  height: 610px;
+  max-width: 1180px;
+  margin: 0 auto;
+  background-image: url("../../assets/img/photos/p3.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  display: flex;
+  justify-content: start;
+
+  @media (max-width: vars.$xl) {
+    max-width: 896px;
+  }
+
+  @media (max-width: vars.$lg) {
+    height: 500px;
+    background: none;
+    max-width: unset;
+    justify-content: center;
+    height: unset;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (max-width: vars.$xs) {
+    height: unset;
+  }
+}
+
+.actorsContent {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  @media (max-width: vars.$xl) {
+    width: 260px;
+    padding: 45px 0;
+  }
+
+  @media (max-width: vars.$lg) {
+    align-items: center;
+    width: unset;
+  }
+
+  @media (max-width: vars.$xs) {
+    padding: 25px 0;
+    gap: 15px;
+  }
+}
+
+.header {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 31px;
+  line-height: 31px;
+  font-weight: 700;
+
+  @media (max-width: vars.$xl) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  @media (max-width: vars.$xs) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.paragraph {
+  font-size: 21px;
+  line-height: 33px;
+  font-weight: 400;
+  max-width: 416px;
+
+  @media (max-width: vars.$xl) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: vars.$lg) {
+    text-align: center;
+  }
+
+  @media (max-width: vars.$xs) {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}

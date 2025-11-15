@@ -13,6 +13,11 @@
     width: 90%;
   }
 
+  @media (max-width: vars.$xs) {
+    gap: 18px;
+    padding: 24px 0;
+  }
+
   h2 {
     white-space: nowrap;
     font-size: 31px;
@@ -70,6 +75,10 @@
     gap: 25px;
   }
 
+  @media (max-width: vars.$xs) {
+    width: 100%;
+  }
+
   p {
     font-size: 18px;
     line-height: 28px;
@@ -89,6 +98,7 @@
     @media (max-width: vars.$xs) {
       font-size: 15px;
       line-height: 20px;
+      width: unset;
     }
   }
 }
