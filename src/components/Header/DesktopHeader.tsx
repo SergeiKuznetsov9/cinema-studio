@@ -1,7 +1,7 @@
 import logoImg from "@/assets/img/icons/logo.png";
-import vkImg from "@/assets/img/icons/vk.png";
-import tgImg from "@/assets/img/icons/tg.png";
-import instImg from "@/assets/img/icons/inst.png";
+import viberImg from "@/assets/img/icons/viber.webp";
+import tgImg from "@/assets/img/icons/telegram.webp";
+import whatsappImg from "@/assets/img/icons/whatsapp.webp";
 
 import styles from "./DesktopHeader.module.scss";
 import { TextLink } from "@/shared/TextLink";
@@ -29,11 +29,14 @@ export const DesktopHeader = () => {
             <ul className={styles.contactsList}>
               <li>{header.phone}</li>
               <ul>
-                <IconLink url="#" icon={<img src={vkImg} alt="vkontakte" />} />
+                <IconLink
+                  url="#"
+                  icon={<img src={viberImg} alt="vkontakte" />}
+                />
                 <IconLink url="#" icon={<img src={tgImg} alt="telegram" />} />
                 <IconLink
                   url="#"
-                  icon={<img src={instImg} alt="instagram" />}
+                  icon={<img src={whatsappImg} alt="instagram" />}
                 />
               </ul>
             </ul>

@@ -3,6 +3,7 @@ import { About } from "@/components/About";
 import { Actors } from "@/components/Actors";
 import { Header } from "@/components/Header";
 import { Main } from "@/components/Main";
+import { Contacts } from "@/components/Contacts";
 
 export const App = () => (
   <div>
@@ -11,7 +12,6 @@ export const App = () => (
     <About />
     <Lessons />
     <Actors />
-    {/* 
-    <Contacts /> */}
+    <Contacts />
   </div>
 );
