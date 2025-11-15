@@ -7,8 +7,8 @@ export const AboutBackgroundSection = () => {
 
   return (
     <div className={styles.AboutBackgroundSection}>
-      <h2>{aboutBackgroundSection.header}</h2>
-      <p>{aboutBackgroundSection.text}</p>
+      <h2 className={styles.header}>{aboutBackgroundSection.header}</h2>
+      <p className={styles.paragraph}>{aboutBackgroundSection.text}</p>
       <PhotoSwiper photos={photos} />
     </div>
   );
