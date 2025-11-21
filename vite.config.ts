@@ -12,4 +12,12 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "src/assets"),
     },
   },
+  // build: {
+  //   outDir: 'dist',
+  //   rollupOptions: {
+  //     input: {
+  //       main: path.resolve(__dirname, 'index.html')
+  //     }
+  //   }
+  // }
 });
