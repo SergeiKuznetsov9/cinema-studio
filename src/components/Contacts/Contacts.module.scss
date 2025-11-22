@@ -4,8 +4,7 @@
   background-color: var(--background);
   color: var(--primary-text-color);
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px;
   display: flex;
   justify-content: center;
 }
@@ -15,6 +14,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: vars.$md) {
+    justify-content: center;
+  }
 }
 
 .header {
@@ -64,11 +67,18 @@
 }
 
 .map {
-  width: 613px;
-  height: 319px;
+  max-width: 613px;
+  width: 60%;
+  aspect-ratio: 613/319;
+  gap: 20px;
+
+  @media (max-width: vars.$md) {
+    display: none;
+  }
 
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 }

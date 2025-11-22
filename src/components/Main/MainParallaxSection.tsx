@@ -1,6 +1,7 @@
 import { Button } from "@/shared/Button";
 import { mainParalaxSection } from "@/assets/data/main";
 import gogolPhoto from "@/assets/img/photos/p5.png";
+import foundersPhoto from "@/assets/img/photos/p0.png";
 
 import styles from "./MainParallaxSection.module.scss";
 
@@ -13,7 +14,7 @@ export const MainParallaxSection = () => {
         </div>
         <div className={styles.quoteContainer}>
           <p className={styles.quote}>
-            Что есть жизнь? Это разрушение мечты действительность...
+            Что есть жизнь? Это разрушение мечты действительностью...
           </p>
           <p className={styles.line} />
           <p className={styles.authorName}>Николай Васильевич Гоголь</p>
@@ -30,6 +31,9 @@ export const MainParallaxSection = () => {
             {mainParalaxSection.present}{" "}
             <strong>{mainParalaxSection.founders}</strong>
           </p>
+          <div className={styles.proportionalBox}>
+            <img src={foundersPhoto} alt="founders" />
+          </div>
           <p>
             <i>{mainParalaxSection.credo}</i>
           </p>

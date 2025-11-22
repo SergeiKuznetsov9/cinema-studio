@@ -1,5 +1,21 @@
 @use "../../app/styles/vars/breakpoints-vars.scss" as vars;
 
+.mockHeader {
+  height: 0;
+
+  @media (max-width: vars.$lg) {
+    height: 60px;
+  }
+
+  @media (max-width: vars.$sm) {
+    height: 50px;
+  }
+
+  @media (max-width: vars.$xs) {
+    height: 40px;
+  }
+}
+
 .decorationWrapper {
   background-color: var(--background);
 }

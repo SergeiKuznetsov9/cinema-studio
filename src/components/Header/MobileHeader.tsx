@@ -1,3 +1,4 @@
+import logoImg from "@/assets/img/icons/logo.png";
 import burgerIcon from "@/assets/img/icons/burger.svg";
 import styles from "./MobileHeader.module.scss";
 import { createPortal } from "react-dom";
@@ -50,6 +51,9 @@ export const MobileHeader = () => {
   return (
     <>
       <header className={styles.MobileHeader}>
+        <div className={styles.logo}>
+          <img src={logoImg} alt="Gogol studio" />
+        </div>
         <button onClick={() => setMenuOpened(!isMenuOpened)}>
           <img src={burgerIcon} alt="Menu" />
         </button>

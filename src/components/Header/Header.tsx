@@ -7,6 +7,7 @@ export const Header = () => {
     <>
       <DesktopHeader />
       <MobileHeader />
+      <div className={styles.mockHeader} />
       <div className={styles.decorationWrapper}>
         <div className={styles.decoration}></div>
       </div>
