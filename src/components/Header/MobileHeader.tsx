@@ -74,7 +74,11 @@ export const MobileHeader = () => {
                 <nav className={styles.menuNav}>
                   <TextLink title="Главная" className={styles.menuLink} />
                   <TextLink title="Актеры" className={styles.menuLink} />
-                  <TextLink title="О нас" className={styles.menuLink} />
+                  <TextLink
+                    url="/about"
+                    title="О нас"
+                    className={styles.menuLink}
+                  />
                   <TextLink title="О курсе" className={styles.menuLink} />
                   <TextLink title="Новости" className={styles.menuLink} />
                 </nav>

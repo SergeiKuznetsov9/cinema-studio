@@ -15,7 +15,7 @@ export const Footer = () => {
             <ul>
               <TextLink title="Главная" />
               <TextLink title="Актеры" />
-              <TextLink title="О нас" />
+              <TextLink url="/about" title="О нас" />
               <TextLink title="О курсе" />
               <TextLink title="Новости" />
             </ul>
