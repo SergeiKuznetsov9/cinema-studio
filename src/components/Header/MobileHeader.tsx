@@ -72,15 +72,32 @@ export const MobileHeader = () => {
                 }`}
               >
                 <nav className={styles.menuNav}>
-                  <TextLink title="Главная" className={styles.menuLink} />
-                  <TextLink title="Актеры" className={styles.menuLink} />
+                  <TextLink
+                    title="Главная"
+                    className={styles.menuLink}
+                    onClick={() => setMenuOpened(false)}
+                  />
+                  <TextLink
+                    title="Актеры"
+                    className={styles.menuLink}
+                    onClick={() => setMenuOpened(false)}
+                  />
                   <TextLink
                     url="/about"
                     title="О нас"
                     className={styles.menuLink}
+                    onClick={() => setMenuOpened(false)}
                   />
-                  <TextLink title="О курсе" className={styles.menuLink} />
-                  <TextLink title="Новости" className={styles.menuLink} />
+                  <TextLink
+                    title="О курсе"
+                    className={styles.menuLink}
+                    onClick={() => setMenuOpened(false)}
+                  />
+                  <TextLink
+                    title="Новости"
+                    className={styles.menuLink}
+                    onClick={() => setMenuOpened(false)}
+                  />
                 </nav>
               </div>
             </div>,

@@ -2,10 +2,17 @@ import { Button } from "@/shared/Button";
 import { mainParalaxSection } from "@/assets/data/main";
 import gogolPhoto from "@/assets/img/photos/p5.png";
 import foundersPhoto from "@/assets/img/photos/p0.png";
+import { useNavigate } from "react-router-dom";
 
 import styles from "./MainParallaxSection.module.scss";
 
 export const MainParallaxSection = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/about");
+  };
+
   return (
     <>
       <div className={styles.Main}>
@@ -39,7 +46,11 @@ export const MainParallaxSection = () => {
           </p>
         </div>
         <div className={styles.descriptionButtons}>
-          <Button title="Подробнее о нас" className={styles.button} />
+          <Button
+            title="Подробнее о нас"
+            className={styles.button}
+            onClick={handleClick}
+          />
         </div>
       </div>
     </>

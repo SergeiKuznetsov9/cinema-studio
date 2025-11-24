@@ -9,6 +9,7 @@ type TextLinkProps = {
   className?: string;
   isBlank?: boolean;
   asLi?: boolean;
+  onClick?: () => void;
 };
 
 export const TextLink: FC<TextLinkProps> = ({
@@ -17,12 +18,14 @@ export const TextLink: FC<TextLinkProps> = ({
   className,
   asLi = true,
   isBlank = false,
+  onClick = () => {},
 }) => {
   const linkElement = (
     <Link
       target={isBlank ? "_blank" : "_self"}
       to={url}
       className={classNames(styles.TextLink, className)}
+      onClick={onClick}
     >
       {title}
     </Link>
