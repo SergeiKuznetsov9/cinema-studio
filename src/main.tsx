@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 import "./app/styles/index.scss";
 import { App } from "./app/App.tsx";
 import "swiper/swiper.css";
-import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop.tsx";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

@@ -8,6 +8,7 @@ import { Main } from "@/components/Main";
 import { Contacts } from "@/components/Contacts";
 import { Footer } from "@/components/Footer";
 import { AboutDetails } from "@/components/AboutDetails";
+import { CourseDetails } from "@/components/CourseDetails";
 
 export const App = () => (
   <div>
@@ -27,6 +28,7 @@ export const App = () => (
       />
 
       <Route path="/about" element={<AboutDetails />} />
+      <Route path="/course" element={<CourseDetails />} />
     </Routes>
 
     <Contacts />

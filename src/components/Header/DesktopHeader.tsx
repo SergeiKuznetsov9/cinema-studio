@@ -21,7 +21,7 @@ export const DesktopHeader = () => {
               <TextLink title="Главная" />
               <TextLink title="Актеры" />
               <TextLink url="/about" title="О нас" />
-              <TextLink title="О курсе" />
+              <TextLink url="/course" title="О курсе" />
               <TextLink title="Новости" />
             </ul>
           </nav>

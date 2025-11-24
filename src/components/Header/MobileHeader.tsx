@@ -89,6 +89,7 @@ export const MobileHeader = () => {
                     onClick={() => setMenuOpened(false)}
                   />
                   <TextLink
+                    url="/course"
                     title="О курсе"
                     className={styles.menuLink}
                     onClick={() => setMenuOpened(false)}
