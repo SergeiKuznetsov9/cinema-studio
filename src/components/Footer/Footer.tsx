@@ -13,11 +13,11 @@ export const Footer = () => {
         <div className={styles.navContainer}>
           <nav>
             <ul>
-              <TextLink url="#" title="Главная" />
-              <TextLink url="#" title="Актеры" />
-              <TextLink url="#" title="О нас" />
-              <TextLink url="#" title="О курсе" />
-              <TextLink url="#" title="Новости" />
+              <TextLink title="Главная" />
+              <TextLink title="Актеры" />
+              <TextLink title="О нас" />
+              <TextLink title="О курсе" />
+              <TextLink title="Новости" />
             </ul>
           </nav>
         </div>

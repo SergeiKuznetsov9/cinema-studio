@@ -4,6 +4,7 @@ import styles from "./MobileHeader.module.scss";
 import { createPortal } from "react-dom";
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
+import { TextLink } from "@/shared/TextLink";
 
 export const MobileHeader = () => {
   const [isMenuOpened, setMenuOpened] = useState(false);
@@ -71,21 +72,11 @@ export const MobileHeader = () => {
                 }`}
               >
                 <nav className={styles.menuNav}>
-                  <a href="#" className={styles.menuLink}>
-                    Главная
-                  </a>
-                  <a href="#" className={styles.menuLink}>
-                    Актеры
-                  </a>
-                  <a href="#" className={styles.menuLink}>
-                    О нас
-                  </a>
-                  <a href="#" className={styles.menuLink}>
-                    О курсе
-                  </a>
-                  <a href="#" className={styles.menuLink}>
-                    Новости
-                  </a>
+                  <TextLink title="Главная" className={styles.menuLink} />
+                  <TextLink title="Актеры" className={styles.menuLink} />
+                  <TextLink title="О нас" className={styles.menuLink} />
+                  <TextLink title="О курсе" className={styles.menuLink} />
+                  <TextLink title="Новости" className={styles.menuLink} />
                 </nav>
               </div>
             </div>,

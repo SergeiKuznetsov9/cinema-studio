@@ -1,30 +1,31 @@
 import type { FC } from "react";
 import styles from "./TextLink.module.scss";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 type TextLinkProps = {
-  url: string;
   title: string;
+  url?: string;
   className?: string;
   isBlank?: boolean;
   asLi?: boolean;
 };
 
 export const TextLink: FC<TextLinkProps> = ({
-  url,
+  url = "/",
   title,
   className,
   asLi = true,
   isBlank = false,
 }) => {
   const linkElement = (
-    <a
+    <Link
       target={isBlank ? "_blank" : "_self"}
-      href={url}
+      to={url}
       className={classNames(styles.TextLink, className)}
     >
       {title}
-    </a>
+    </Link>
   );
 
   return asLi ? <li>{linkElement}</li> : linkElement;
