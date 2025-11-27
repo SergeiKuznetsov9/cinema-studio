@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
 import { TextLink } from "@/shared/TextLink";
+import { scrollToTop } from "@/utils/scrollToTop";
 
 export const MobileHeader = () => {
   const [isMenuOpened, setMenuOpened] = useState(false);
@@ -75,12 +76,18 @@ export const MobileHeader = () => {
                   <TextLink
                     title="Главная"
                     className={styles.menuLink}
-                    onClick={() => setMenuOpened(false)}
+                    onClick={() => {
+                      setMenuOpened(false);
+                      scrollToTop();
+                    }}
                   />
                   <TextLink
                     title="Актеры"
                     className={styles.menuLink}
-                    onClick={() => setMenuOpened(false)}
+                    onClick={() => {
+                      setMenuOpened(false);
+                      scrollToTop();
+                    }}
                   />
                   <TextLink
                     url="/about"
@@ -97,7 +104,10 @@ export const MobileHeader = () => {
                   <TextLink
                     title="Новости"
                     className={styles.menuLink}
-                    onClick={() => setMenuOpened(false)}
+                    onClick={() => {
+                      setMenuOpened(false);
+                      scrollToTop();
+                    }}
                   />
                 </nav>
               </div>

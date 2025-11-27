@@ -2,6 +2,7 @@ import logoImg from "@/assets/img/icons/logo.png";
 
 import styles from "./Footer.module.scss";
 import { TextLink } from "@/shared/TextLink";
+import { scrollToTop } from "@/utils/scrollToTop";
 
 export const Footer = () => {
   return (
@@ -13,11 +14,11 @@ export const Footer = () => {
         <div className={styles.navContainer}>
           <nav>
             <ul>
-              <TextLink title="Главная" />
-              <TextLink title="Актеры" />
+              <TextLink title="Главная" onClick={scrollToTop} />
+              <TextLink title="Актеры" onClick={scrollToTop} />
               <TextLink url="/about" title="О нас" />
               <TextLink url="/course" title="О курсе" />
-              <TextLink title="Новости" />
+              <TextLink title="Новости" onClick={scrollToTop} />
             </ul>
           </nav>
         </div>
