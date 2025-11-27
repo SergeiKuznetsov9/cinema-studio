@@ -1,9 +1,9 @@
-import { actorsBackgroundSection } from "@/assets/data/actors";
+import { questionsSection } from "@/assets/data/questions";
 import { ExpandedSticker } from "@/shared/ExpandedSticker/ExpandedSticker";
 import styles from "./ActorsBackgroundSection.module.scss";
 
 export const ActorsBackgroundSection = () => {
-  const { header, text, expandedStickers } = actorsBackgroundSection;
+  const { header, text, expandedStickers } = questionsSection;
   return (
     <div className={styles.ActorsBackgroundSection}>
       <h2 className={styles.header}>{header}</h2>
