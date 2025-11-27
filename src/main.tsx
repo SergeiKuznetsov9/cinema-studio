@@ -8,7 +8,7 @@ import { ScrollToTop } from "./components/ScrollToTop";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename="/cinema-studio">
+    <BrowserRouter basename="/">
       <ScrollToTop>
         <App />
       </ScrollToTop>
