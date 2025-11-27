@@ -38,7 +38,7 @@ export const MainParallaxSection = () => {
             {mainParalaxSection.present}{" "}
             <strong>{mainParalaxSection.founders}</strong>
           </p>
-          <div className={styles.proportionalBox}>
+          <div className={(styles.foundersPhoto)}>
             <img src={foundersPhoto} alt="founders" />
           </div>
           <p>
@@ -51,6 +51,9 @@ export const MainParallaxSection = () => {
             className={styles.button}
             onClick={handleClick}
           />
+        </div>
+        <div>
+
         </div>
       </div>
     </>

@@ -16,11 +16,14 @@ export const AboutDetails = () => {
         <div className={styles.AboutDetails}>
           <div className={styles.aboutDetailsContent}>
             <h2 className={styles.aboutDetailsHeader}>{header}</h2>
-
             <div className={styles.dmitry}>
               <div className={styles.dmitryPhotoContainer}>
                 <div className={styles.dmitryPhoto}>
-                  <img src={dmitryPhoto} alt="Dmitry Lisunenko" />
+                  <img
+                    src={dmitryPhoto}
+                    alt="Dmitry Lisunenko"
+                    className="white-shadow"
+                  />
                 </div>
               </div>
               <div className={styles.dmitryDescription}>
@@ -44,7 +47,11 @@ export const AboutDetails = () => {
               </div>
               <div className={styles.lilyPhotoContainer}>
                 <div className={styles.lilyPhoto}>
-                  <img src={lilyPhoto} alt="Lily Lisunenko" />
+                  <img
+                    src={lilyPhoto}
+                    alt="Lily Lisunenko"
+                    className="white-shadow"
+                  />
                 </div>
               </div>
             </div>
@@ -52,7 +59,11 @@ export const AboutDetails = () => {
             <div className={styles.together}>
               <div className={styles.togetherPhotoContainer}>
                 <div className={styles.togetherPhoto}>
-                  <img src={togetherPhoto} alt="Together" />
+                  <img
+                    src={togetherPhoto}
+                    alt="Together"
+                    className="white-shadow"
+                  />
                 </div>
               </div>
               <div className={styles.togetherDescription}>

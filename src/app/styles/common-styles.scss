@@ -3,3 +3,7 @@
   min-height: 100vh;
   font-family: "Arial", Arial, sans-serif;
 }
+
+.white-shadow {
+  filter: drop-shadow(7px 0px 0px white);
+}
