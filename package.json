@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://SergeiKuznetsov9.github.io/cinema-studio",
+  "homepage": "http://gogol-studio.by",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
