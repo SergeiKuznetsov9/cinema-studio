@@ -15,7 +15,7 @@ export const IconLink: FC<IconLinkProps> = ({
   icon,
   className,
   asLi = true,
-  isBlank = false,
+  isBlank = true,
 }) => {
   const linkElement = (
     <a

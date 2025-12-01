@@ -30,12 +30,15 @@ export const DesktopHeader = () => {
               <li>{header.phone}</li>
               <ul>
                 <IconLink
-                  url="#"
+                  url="viber://chat/?number=375291406652"
                   icon={<img src={viberImg} alt="vkontakte" />}
                 />
-                <IconLink url="#" icon={<img src={tgImg} alt="telegram" />} />
                 <IconLink
-                  url="#"
+                  url="https://telegram.me/Liliya1305"
+                  icon={<img src={tgImg} alt="telegram" />}
+                />
+                <IconLink
+                  url="https://wa.me/375291406652/"
                   icon={<img src={whatsappImg} alt="instagram" />}
                 />
               </ul>

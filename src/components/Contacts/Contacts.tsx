@@ -8,7 +8,7 @@ import mapImg from "@/assets/img/map.png";
 import { IconLink } from "@/shared/IconLink";
 
 export const Contacts = () => {
-  const { header, name, address, phone, reqs } = contacts;
+  const { header, name, address, phone, reqs, unp } = contacts;
 
   return (
     <div className={styles.Contacts}>
@@ -20,15 +20,22 @@ export const Contacts = () => {
           <p className={styles.phone}>{phone}</p>
           <div className={styles.messangers}>
             <ul>
-              <IconLink url="#" icon={<img src={viberImg} alt="vkontakte" />} />
-              <IconLink url="#" icon={<img src={tgImg} alt="telegram" />} />
               <IconLink
-                url="#"
+                url="viber://chat/?number=375291406652"
+                icon={<img src={viberImg} alt="vkontakte" />}
+              />
+              <IconLink
+                url="https://telegram.me/Liliya1305"
+                icon={<img src={tgImg} alt="telegram" />}
+              />
+              <IconLink
+                url="https://wa.me/375291406652/"
                 icon={<img src={whatsappImg} alt="instagram" />}
               />
             </ul>
           </div>
           <p className={styles.reqs}>{reqs}</p>
+          <p className={styles.reqs}>{unp}</p>
         </div>
         <div className={styles.map}>
           <img src={mapImg} alt="map" />
