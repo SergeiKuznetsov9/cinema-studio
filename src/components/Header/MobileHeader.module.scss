@@ -12,6 +12,8 @@
   top: 0;
   left: 0;
   z-index: 100;
+  -webkit-overflow-scrolling: touch;
+  transform: translateZ(0);
 
   @media (max-width: vars.$lg) {
     display: flex;
@@ -33,6 +35,12 @@
     margin-right: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 101;
+    -webkit-appearance: none;
+    border-radius: 0;
+    transform: translateZ(0);
 
     &:hover {
       filter: brightness(0.8);
@@ -57,10 +65,14 @@
 
 .logo {
   height: 75%;
+  width: auto;
+  flex-shrink: 0;
 
   img {
-    width: 100%;
+    width: auto;
     height: 100%;
+    object-fit: contain;
+    display: block;
   }
 }
 
